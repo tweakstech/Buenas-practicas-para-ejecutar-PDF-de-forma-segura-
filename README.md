@@ -69,8 +69,11 @@ Es importante **ver las extensiones de los archivos** en el sistema para poder i
 
 ## Verifica el hash del archivo PDF
 - Verificar el hash de un archivo PDF es una forma eficaz de asegurarte de que el archivo no ha sido alterado o manipulado. El hash es un valor único que se genera a partir del contenido del archivo y se utiliza para identificarlo de manera precisa.
+
 - Para verificar el hash de un archivo PDF, primero necesitas obtener el valor del hash original del archivo (por ejemplo, proporcionado por el creador del archivo o una fuente confiable). Luego, puedes generar el hash del archivo PDF descargado y compararlo con el valor original.
+
 - Si ambos valores de hash coinciden, es seguro asumir que el archivo no ha sido modificado. Si el hash no coincide, significa que el archivo ha sido alterado y puede contener código malicioso o haber sido corrompido.
+
 **Nota:** Los algoritmos de hash comunes incluyen **MD5**, **SHA-1** y **SHA-256**. Los valores de hash generados por estos algoritmos son únicos para cada archivo, por lo que cualquier cambio en el archivo alterará el hash.
 
 > [!TIP]
@@ -81,6 +84,7 @@ Es importante **ver las extensiones de los archivos** en el sistema para poder i
 
 ## Los PDF pueden contener instrucciones maliciosas
 - Los PDF pueden contener instrucciones por detrás para obtener privilegios ejecutando códigos como **JavaScript** o **exploit**. Al abrir el PDF, se ejecuta el código malicioso sin que te enteres.
+
 - **Técnicas similares a las utilizadas en archivos Word y Excel:** Los archivos PDF pueden emplear técnicas maliciosas similares a las utilizadas en archivos de **Microsoft Word** y **Excel** mediante el uso de **macros**. Al igual que los macros en documentos de Word o Excel, que pueden ejecutar código malicioso sin el conocimiento del usuario, los archivos PDF pueden estar diseñados para ejecutar **scripts maliciosos**, **exploits** o **código** como **JavaScript**, que aprovechan vulnerabilidades en el software para ejecutar comandos dañinos o ejecutar exploits sin el conocimiento del usuario.
 
 > [!WARNING]
@@ -88,8 +92,11 @@ Es importante **ver las extensiones de los archivos** en el sistema para poder i
 
 ## Mantén actualizado el visor de PDF que utilices
 - **Recomendación:** No uses Adobe Acrobat Reader, ya que ha sido objeto de múltiples vulnerabilidades en el pasado y se ha considerado un objetivo frecuente de los atacantes. 
+
 - Mantén siempre actualizado el visor de PDF que utilices, ya sea un lector de código abierto o uno con características de seguridad robustas.
+
 - Asegúrate de instalar las actualizaciones de seguridad y parches cuando estén disponibles para el software que utilices, ya que muchas de estas actualizaciones abordan vulnerabilidades que podrían ser explotadas por archivos PDF maliciosos.
+
 - Una alternativa segura es **[Foxit Reader](https://www.foxitsoftware.com/pdf-reader/)**, que cuenta con características de seguridad y actualizaciones periódicas.
 
 > [!TIP]
@@ -97,8 +104,11 @@ Es importante **ver las extensiones de los archivos** en el sistema para poder i
 
 ## Usa la conversión de PDF a imágenes para mayor seguridad
 - Una forma adicional de protegerte al manejar archivos PDF potencialmente peligrosos es convertirlos a imágenes antes de abrirlos. Esta práctica elimina cualquier código potencialmente malicioso, como **JavaScript** o **exploits**, que puedan estar incrustados en el archivo PDF.
+
 - Al convertir un PDF a una imagen (por ejemplo, a formato **PNG** o **JPEG**), solo se visualiza el contenido estático del documento, lo que significa que no se ejecutan scripts maliciosos ni comandos. Las imágenes generadas serán legítimas del formato correcto y no contendrán código ejecutable, ya que las imágenes no pueden ejecutar código de forma directa.
+
 - Sin embargo, es importante tener en cuenta que, aunque las imágenes no pueden ejecutar código por sí solas, aún podrían emplearse técnicas similares a las de los archivos PDF maliciosos. Por ejemplo, al combinar archivos y ocultar las extensiones reales del archivo, un atacante podría intentar engañar al sistema para que el archivo de imagen sea ejecutado de forma incorrecta. Pero, al convertir un PDF a imágenes, estas técnicas no serán efectivas, ya que el archivo resultante será un archivo de imagen legítimo, sin la posibilidad de ejecutar código malicioso.
+
 - Para convertir tus archivos PDF a imágenes de forma sencilla, puedes usar la herramienta [PDF2Go](https://www.pdf2go.com/es/pdf-a-jpg).
 
 > [!TIP]
