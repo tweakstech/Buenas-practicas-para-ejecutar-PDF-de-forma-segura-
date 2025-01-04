@@ -21,7 +21,11 @@ Estos ataques pueden estar diseñados para **explotar vulnerabilidades** en los 
 - Verifica siempre la fuente de los archivos PDF antes de abrirlos. Si no puedes confirmar su autenticidad, evita ejecutarlos.
 
 ## Verifica el enlace del archivo con herramientas de análisis de seguridad
-- Verifica el enlace con [VirusTotal](https://www.virustotal.com) y [URLScan](https://urlscan.io) para ver si ejecuta PDF en sandbox o entornos seguros antes. Para ejecutar en un entorno seguro, puedes usar [AnyRun](https://any.run) o [VirtualBox](https://www.virtualbox.org).
+
+- Verifica el enlace con [VirusTotal](https://www.virustotal.com) y [URLScan](https://urlscan.io) para obtener más detalles sobre su comportamiento.  
+- Una vez analizado con URLScan, obtén la dirección IP asociada al enlace.  
+- Verifica esa IP en [AbuseIPDB](https://www.abuseipdb.com) para confirmar si ha sido reportada por actividad maliciosa.  
+- Para ejecutar en un entorno seguro, puedes usar [AnyRun](https://any.run) o [VirtualBox](https://www.virtualbox.org).  
 
 ## Mantén activado ver extensiones de archivos en el sistema
 Es importante **ver las extensiones de los archivos** en el sistema para poder identificar correctamente el tipo de archivo con el que estás trabajando. Muchas veces, los atacantes pueden ocultar las extensiones reales de los archivos para hacerlos parecer inofensivos, como cambiar un archivo malicioso de `.exe` a `.pdf`, lo que podría engañar a los usuarios. Si tienes activada la visualización de extensiones de archivos, podrás detectar archivos sospechosos que realmente sean de otro tipo, como ejecutables disfrazados de documentos.
